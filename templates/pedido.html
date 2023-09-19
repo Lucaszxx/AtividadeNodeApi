@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/pedido.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="header">
+            <img id="imgLogo" src="https://i.pinimg.com/originals/89/3e/b9/893eb9b2ff54f3da0685196b86758f4e.png" onclick="window.location.href='/'">
+        </div>  
+        <div class="form-section">
+            <form action="/criarPedido" method="post">
+                <label for="lanche">Selecione um sanduíche:</label>
+                <select id="lanche" name="lanche">
+                    <option value="bigmac">
+                        Big Mac
+                    </option>
+                    <option value="quarteirao">
+                        Quarter Pounder
+                    </option>
+                    <option value="mcchicken">
+                        McChicken
+                    </option>
+                    <option value="fish">
+                        Filet-O-Fish
+                    </option>
+                </select>
+                <label>Digite seu nome:</label>
+                <input type="text" name="nome">
+                <br>
+                <button type="submit">Fazer Pedido</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/pedidos.css">
+    <title>PEDIDOS</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="header">
+            <img id="imgLogo" src="https://i.pinimg.com/originals/89/3e/b9/893eb9b2ff54f3da0685196b86758f4e.png" onclick="window.location.href='/'">
+            <h1>Pedidos</h1>
+        </div>  
+        <div class="pedidos-section">
+            <form action="/pedidos/:nome" method="get">
+                <label for="nome">Digite o nome do cliente para pesquisar</label>
+                <input type="text" name="nome" id="nome">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
