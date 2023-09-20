@@ -38,15 +38,12 @@ app.get('/pedidos', (req, resp) => {
 });
 
 app.get('/pedidos/:nome', (req, resp) => {
-    const nome = req.params.nome;
+    const nome = req.query.nome;
     pedidos.forEach((pedido) => {
-        console.log(`Comparando ${pedido.cliente} com ${nome}`);
-        if (pedido.cliente.toLowerCase() === nome.toLowerCase()) {
+        if (pedido.cliente.toLowerCase() == nome.toLowerCase()) {
             console.log(`Cliente: ${pedido.cliente} | Lanche: ${pedido.lanche}`);
         }
     });
-    console.log(pedidos)
-    resp.end()
-})
+});
 
 app.listen(5000);
